@@ -24,18 +24,18 @@ _start:             ;tell linker entry point
    add	rax, '0'
 	
    mov 	[answer], rax
-   mov	rcx,msg	
+   mov	rcx, msg	
    mov	rdx, len
-   mov	rbx,STDOUT
-   mov	rax,SYS_WRITE
+   mov	rbx, STDOUT
+   mov	rax, SYS_WRITE
    int	0x80
 	
-   mov	rcx,answer
+   mov	rcx, answer
    mov	rdx, 1
-   mov	rbx,STDOUT
-   mov	rax,SYS_WRITE
+   mov	rbx, STDOUT
+   mov	rax, SYS_WRITE
    int	0x80
 	
-   mov	rax,SYS_EXIT
+   mov	rax, SYS_EXIT
    int	0x80
 

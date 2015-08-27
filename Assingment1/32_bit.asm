@@ -24,20 +24,20 @@ _start:
    add	eax, '0'
 	
    mov 	[answer], eax
-   mov	ecx,msg	
+   mov	ecx, msg	
    mov	edx, len
-   mov	ebx,STDOUT
-   mov	eax,SYS_WRITE
+   mov	ebx, STDOUT
+   mov	eax, SYS_WRITE
    int	0x80
 	
-   mov	ecx,answer
+   mov	ecx, answer
    mov	edx, 1
-   mov	ebx,STDOUT
-   mov	eax,SYS_WRITE
+   mov	ebx, STDOUT
+   mov	eax, SYS_WRITE
    int	0x80
 
 exit:
 
-   mov	eax,SYS_EXIT
+   mov	eax, SYS_EXIT
    int	0x80
 
